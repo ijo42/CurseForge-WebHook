@@ -32,7 +32,7 @@ jobs:
         id: gradle
 
       - name: "Comment build scan url"
-        uses: actions/github-script@v4.0.2
+        uses: actions/github-script@v5.1.0
         if: ${{ failure() }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
